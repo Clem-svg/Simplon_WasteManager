@@ -2,14 +2,25 @@
 
 namespace App\Model\WasteTreatment;
 
+use App\Model\Waste\AbstractWaste;
+
 abstract class AbstractWasteTreatment
 {
-    // protected int $quantity;
-    // protected int $rejected_co2;
+    protected int $capacity;
 
-    // public function __construct(int $quantity, int $rejected_co2)
-    // {
-    //     $this->quantity = $quantity;
-    //     $this->rejected_co2 = $rejected_co2;
-    // }
+    public function __construct(int $capacity)
+    {
+        $this->capacity = $capacity;
+    }
+
+    public function setWaste (AbstractWaste $waste)
+    {
+      $this->waste = $waste;
+    }
+
+    public function getWaste(): ?AbstractWaste
+    {
+        return $this->waste;
+    }
+
 }
