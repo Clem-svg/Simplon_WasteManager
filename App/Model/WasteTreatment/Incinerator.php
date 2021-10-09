@@ -15,4 +15,8 @@ class Incinerator extends AbstractWasteTreatment
     parent::setWaste($waste);
   }
 
+  public function burn(IncineratableInterface $waste){
+
+  }
+
 }

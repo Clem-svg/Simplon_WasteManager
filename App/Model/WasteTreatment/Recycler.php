@@ -13,4 +13,9 @@ class Recycler extends AbstractWasteTreatment
     }
     parent::setWaste($waste);
   }
+
+  public function recycle(RecyclableInterface $waste){
+
+  }
+
 }

@@ -15,4 +15,8 @@ class Composter extends AbstractWasteTreatment
     }
     parent::setWaste($waste);
   }
+
+  public function compost(CompostableInterface $waste){
+
+  }
 }

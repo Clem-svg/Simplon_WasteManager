@@ -7,4 +7,11 @@ use App\Model\WasteType\IncineratableInterface;
 
 class Paper extends AbstractWaste implements RecyclableInterface, IncineratableInterface {
 
+  public function getRecycled(){
+
+  }
+
+  public function getIncinerated(){
+
+  }
 }
