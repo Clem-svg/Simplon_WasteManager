@@ -2,17 +2,15 @@
 
 namespace App\Model\Waste;
 
-use App\Model\WasteType\IncineratableInterface;
+class BlackBagWaste extends AbstractWaste {
 
+  protected int $quantity;
+  protected int $burntCo2;
 
-class BlackBagWaste extends AbstractWaste implements IncineratableInterface {
-
-  public function getRecycled(){
-
-  }
-
-  public function getIncinerated(){
-
+  public function __construct(int $quantity, int $burntCo2)
+  {
+      $this->quantity = $quantity;
+      $this->burntCo2 = $burntCo2;
   }
 }
 

@@ -2,16 +2,13 @@
 
 namespace App\Model\Waste;
 
-abstract class AbstractWaste
+use App\Model\WasteType\IncineratableInterface;
+
+
+abstract class AbstractWaste implements IncineratableInterface
 {
     protected int $quantity;
     protected int $burntCo2;
-
-    public function __construct(int $quantity, int $burntCo2)
-    {
-        $this->quantity = $quantity;
-        $this->burntCo2 = $burntCo2;
-    }
 
     /**
      * Get the value of quantity
@@ -59,6 +56,10 @@ abstract class AbstractWaste
         $this->burntCo2 = $burntCo2;
 
         return $this;
+    }
+
+    public function getIncinerated(){
+
     }
 
 }

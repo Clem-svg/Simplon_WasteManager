@@ -2,16 +2,6 @@
 
 namespace App\Model\Waste;
 
-use App\Model\WasteType\RecyclableInterface;
-use App\Model\WasteType\IncineratableInterface;
+class Paper extends AbstractRecyclableWaste {
 
-class Paper extends AbstractWaste implements RecyclableInterface, IncineratableInterface {
-
-  public function getRecycled(){
-
-  }
-
-  public function getIncinerated(){
-
-  }
 }
