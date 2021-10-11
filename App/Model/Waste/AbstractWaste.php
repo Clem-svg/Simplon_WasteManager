@@ -2,7 +2,7 @@
 
 namespace App\Model\Waste;
 
-use App\Model\WasteType\IncineratableInterface;
+use App\Model\Waste\WasteType\IncineratableInterface;
 
 
 abstract class AbstractWaste implements IncineratableInterface

@@ -2,7 +2,7 @@
 
 namespace App\Model\Waste;
 
-use App\Model\WasteType\RecyclableInterface;
+use App\ModelWaste\WasteType\RecyclableInterface;
 
 
 abstract class AbstractRecyclableWaste extends AbstractWaste implements RecyclableInterface
