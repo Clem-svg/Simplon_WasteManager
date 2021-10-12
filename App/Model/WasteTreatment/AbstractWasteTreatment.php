@@ -7,20 +7,59 @@ use App\Model\Waste\AbstractWaste;
 abstract class AbstractWasteTreatment
 {
     protected int $capacity;
+    protected int $currentCapacity;
 
     public function __construct(int $capacity)
     {
         $this->capacity = $capacity;
     }
 
-    public function setWaste (AbstractWaste $waste)
+
+    /**
+     * Get the value of capacity
+     *
+     * @return  int
+     */
+    public function getCapacity()
     {
-      $this->waste = $waste;
+        return $this->capacity;
     }
 
-    public function getWaste(): ?AbstractWaste
+    /**
+     * Set the value of capacity
+     *
+     * @param  int  $capacity
+     *
+     * @return  self
+     */
+    public function setCapacity(int $capacity)
     {
-        return $this->waste;
+        $this->capacity = $capacity;
+
+        return $this;
     }
 
+    /**
+     * Get the value of currentCapacity
+     *
+     * @return  int
+     */
+    public function getCurrentCapacity()
+    {
+        return $this->currentCapacity;
+    }
+
+    /**
+     * Set the value of currentCapacity
+     *
+     * @param  int  $currentCapacity
+     *
+     * @return  self
+     */
+    public function setCurrentCapacity(int $currentCapacity)
+    {
+        $this->currentCapacity = $currentCapacity;
+
+        return $this;
+    }
 }
