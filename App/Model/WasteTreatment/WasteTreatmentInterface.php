@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Models\WasteTreatment;
+namespace App\Model\WasteTreatment;
 
-use App\Models\Waste\AbstractWaste;
+use App\Model\Waste\AbstractWaste;
 
 interface WasteTreatmentInterface
 {

@@ -4,4 +4,7 @@
 (Est-ce que besoin de faire une class abstract consacrée aux platiques qui extends AbstactRecyclableWaste.php?)
 - Une fois les class Waste à peu près ok, tentative de lecture des JSON pour les générer
 - Réorganisation des classes "WasteTreatment"
+- Découpage des tâches en plus petites étapes :
+  Créer une entité déchet et une entité traitement de déchets
+  Essayer de supprimer les déchets
 

@@ -2,7 +2,7 @@
 
 namespace App\Model\Waste;
 
-use App\Model\WasteType\CompostableInterface;
+use App\Model\Waste\WasteType\CompostableInterface;
 
 class GreenWaste extends AbstractWaste implements CompostableInterface {
 

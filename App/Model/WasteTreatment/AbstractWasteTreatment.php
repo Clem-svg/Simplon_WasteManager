@@ -12,6 +12,7 @@ abstract class AbstractWasteTreatment
     public function __construct(int $capacity)
     {
         $this->capacity = $capacity;
+        $this->currentCapacity = $capacity;
     }
 
 
@@ -50,7 +51,7 @@ abstract class AbstractWasteTreatment
     }
 
     /**
-     * Set the value of currentCapacity
+     * Set the value of currentCapacitya
      *
      * @param  int  $currentCapacity
      *

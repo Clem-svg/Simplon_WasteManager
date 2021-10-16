@@ -2,8 +2,7 @@
 
 namespace App\Model\Waste;
 
-use App\ModelWaste\WasteType\RecyclableInterface;
-
+use App\Model\Waste\WasteType\RecyclableInterface;
 
 abstract class AbstractRecyclableWaste extends AbstractWaste implements RecyclableInterface
 {
@@ -21,7 +20,6 @@ abstract class AbstractRecyclableWaste extends AbstractWaste implements Recyclab
   public function getRecycled(){
 
   }
-
 
   /**
    * Get the value of recycledCo2
