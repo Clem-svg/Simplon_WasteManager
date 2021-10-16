@@ -2,12 +2,14 @@
 
 require_once 'autoload.php';
 
-use App\Model\Waste\GreenWaste;
-use App\Model\WasteTreatment\Incinerator;
+use App\Model\Waste\Paper;
+use App\Model\WasteTreatment\GlassRecycler;
 
-$testWaste = new GreenWaste(12,12,12);
+echo 'Bonjour et bienvenue !';
+
+$testWaste = new Paper(12,12,12);
 var_dump($testWaste);
-$testIncinerator = new Incinerator(23);
+$testIncinerator = new GlassRecycler(23);
 var_dump($testIncinerator);
-$testIncinerator->treatWaste($testWaste);
+$testIncinerator->recycleWaste($testWaste);
 var_dump($testIncinerator);
