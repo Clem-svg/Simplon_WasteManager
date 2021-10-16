@@ -6,5 +6,5 @@ use App\Model\Waste\AbstractRecyclableWaste;
 
 interface WasteRecyclerInterface
 {
-  public function recycleWaste(bstractRecyclableWaste $waste);
+  public function recycleWaste(AbstractRecyclableWaste $waste);
 }
