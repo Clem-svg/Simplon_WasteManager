@@ -3,7 +3,7 @@
 Namespace App\Model\WasteTreatment;
 
 use App\Model\WasteTreatment\AbstractWasteTreatment;
-use App\Model\WasteTreatment\Services\WasteTreatmentInterface;
+use App\Model\WasteTreatment\WasteTreatmentInterface;
 use App\Model\Waste\AbstractWaste;
 use App\Model\Waste\WasteType\CompostableInterface;
 
