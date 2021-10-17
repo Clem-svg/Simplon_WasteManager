@@ -3,7 +3,7 @@
 
 namespace App\Controller;
 
-class JsonController {
+class JsonC2Controller {
 
   function getCo2File(){
 

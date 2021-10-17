@@ -4,7 +4,7 @@ require_once 'autoload.php';
 
 use App\Model\Waste\Paper;
 use App\Model\WasteTreatment\GlassRecycler;
-use App\Controller\JsonController;
+use App\Controller\JsonDataController;
 
 
 echo 'Bonjour et bienvenue !';
@@ -16,5 +16,8 @@ echo 'Bonjour et bienvenue !';
 // $testIncinerator->recycleWaste($testWaste);
 // var_dump($testIncinerator);
 
-$hello = new JsonController();
-var_dump($hello->getCo2File());
+// $hello = new JsonController();
+// var_dump($hello->getCo2File());
+
+$hello = new JsonDataController();
+var_dump($hello->getContent());
