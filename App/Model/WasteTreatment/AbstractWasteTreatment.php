@@ -6,10 +6,10 @@ use App\Model\Waste\AbstractWaste;
 
 abstract class AbstractWasteTreatment
 {
-    protected int $capacity;
-    protected int $currentCapacity;
+    protected float $capacity;
+    protected float $currentCapacity;
 
-    public function __construct(int $capacity)
+    public function __construct(float $capacity)
     {
         $this->capacity = $capacity;
         $this->currentCapacity = $capacity;
@@ -19,7 +19,7 @@ abstract class AbstractWasteTreatment
     /**
      * Get the value of capacity
      *
-     * @return  int
+     * @return  float
      */
     public function getCapacity()
     {
@@ -29,11 +29,11 @@ abstract class AbstractWasteTreatment
     /**
      * Set the value of capacity
      *
-     * @param  int  $capacity
+     * @param  float  $capacity
      *
      * @return  self
      */
-    public function setCapacity(int $capacity)
+    public function setCapacity(float $capacity)
     {
         $this->capacity = $capacity;
 
@@ -43,7 +43,7 @@ abstract class AbstractWasteTreatment
     /**
      * Get the value of currentCapacity
      *
-     * @return  int
+     * @return  float
      */
     public function getCurrentCapacity()
     {
@@ -53,11 +53,11 @@ abstract class AbstractWasteTreatment
     /**
      * Set the value of currentCapacitya
      *
-     * @param  int  $currentCapacity
+     * @param  float  $currentCapacity
      *
      * @return  self
      */
-    public function setCurrentCapacity(int $currentCapacity)
+    public function setCurrentCapacity(float $currentCapacity)
     {
         $this->currentCapacity = $currentCapacity;
 

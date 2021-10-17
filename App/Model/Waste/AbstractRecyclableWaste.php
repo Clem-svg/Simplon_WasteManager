@@ -2,15 +2,15 @@
 
 namespace App\Model\Waste;
 
-use App\Model\Waste\WasteType\RecyclableInterface;
+use App\Model\Waste\WasteType\Recyclablefloaterface;
 
-abstract class AbstractRecyclableWaste extends AbstractWaste implements RecyclableInterface
+abstract class AbstractRecyclableWaste extends AbstractWaste implements Recyclablefloaterface
 {
-  protected int $quantity;
-  protected int $burntCo2;
-  protected int $recycledCo2;
+  protected float $quantity;
+  protected float $burntCo2;
+  protected float $recycledCo2;
 
-  public function __construct(int $quantity, int $burntCo2, int $recycledCo2)
+  public function __construct(float $quantity, float $burntCo2, float $recycledCo2)
   {
       $this->quantity = $quantity;
       $this->burntCo2 = $burntCo2;
@@ -24,7 +24,7 @@ abstract class AbstractRecyclableWaste extends AbstractWaste implements Recyclab
   /**
    * Get the value of recycledCo2
    *
-   * @return  int
+   * @return  float
    */
   public function getRecycledCo2()
   {
@@ -34,11 +34,11 @@ abstract class AbstractRecyclableWaste extends AbstractWaste implements Recyclab
   /**
    * Set the value of recycledCo2
    *
-   * @param  int  $recycledCo2
+   * @param  float  $recycledCo2
    *
    * @return  self
    */
-  public function setRecycledCo2(int $recycledCo2)
+  public function setRecycledCo2(float $recycledCo2)
   {
     $this->recycledCo2 = $recycledCo2;
 
