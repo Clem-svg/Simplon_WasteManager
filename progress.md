@@ -8,9 +8,10 @@
   Essayer de supprimer les déchets
   Appliquer à tous les models (laissons le plastique de côté pour le moment)
 -Lecture du fichier CO2.json et première approche du traitement des classes plastiques
+- Ajout d'une classe pour lire le second Json
 
 
 # Difficultés rencontrées :
 - Prise en main de php
-- Retravaille constant de la structure de l'app
+- Retravail constant des differentes classes pour tester
 
