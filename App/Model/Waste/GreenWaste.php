@@ -2,17 +2,17 @@
 
 namespace App\Model\Waste;
 
-use App\Model\Waste\WasteType\CompostableInterface;
+use App\Model\Waste\WasteType\Compostablefloaterface;
 
-class GreenWaste extends AbstractWaste implements CompostableInterface {
+class GreenWaste extends AbstractWaste implements Compostablefloaterface {
 
-  protected int $quantity;
-  protected int $burntCo2;
-  protected int $compostedCo2;
+  protected float $quantity;
+  protected float $burntCo2;
+  protected float $compostedCo2;
   protected string $name = "organique";
 
 
-  public function __construct(int $quantity, int $burntCo2, int $compostedCo2)
+  public function __construct(float $quantity, float $burntCo2, float $compostedCo2)
   {
       $this->quantity = $quantity;
       $this->burntCo2 = $burntCo2;

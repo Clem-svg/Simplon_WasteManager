@@ -7,14 +7,14 @@ use App\Model\Waste\WasteType\IncineratableInterface;
 
 abstract class AbstractWaste implements IncineratableInterface
 {
-    protected int $quantity;
-    protected int $burntCo2;
+    protected float $quantity;
+    protected float $burntCo2;
     protected string $name;
 
     /**
      * Get the value of quantity
      *
-     * @return  int
+     * @return  float
      */
     public function getQuantity()
     {
@@ -24,11 +24,11 @@ abstract class AbstractWaste implements IncineratableInterface
     /**
      * Set the value of quantity
      *
-     * @param  int  $quantity
+     * @param  float  $quantity
      *
      * @return  self
      */
-    public function setQuantity(int $quantity)
+    public function setQuantity(float $quantity)
     {
         $this->quantity = $quantity;
 
@@ -38,7 +38,7 @@ abstract class AbstractWaste implements IncineratableInterface
     /**
      * Get the value of burntCo2
      *
-     * @return  int
+     * @return  float
      */
     public function getBurntCo2()
     {
@@ -48,11 +48,11 @@ abstract class AbstractWaste implements IncineratableInterface
     /**
      * Set the value of burntCo2
      *
-     * @param  int  $burntCo2
+     * @param  float  $burntCo2
      *
      * @return  self
      */
-    public function setBurntCo2(int $burntCo2)
+    public function setBurntCo2(float $burntCo2)
     {
         $this->burntCo2 = $burntCo2;
 
