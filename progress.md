@@ -7,6 +7,7 @@
   Créer une entité déchet et une entité traitement de déchets
   Essayer de supprimer les déchets
   Appliquer à tous les models (laissons le plastique de côté pour le moment)
+-Lecture du fichier CO2.json et première approche du traitement des classes plastiques
 
 
 # Difficultés rencontrées :

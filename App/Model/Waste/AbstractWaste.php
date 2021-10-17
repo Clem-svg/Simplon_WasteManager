@@ -9,6 +9,7 @@ abstract class AbstractWaste implements IncineratableInterface
 {
     protected int $quantity;
     protected int $burntCo2;
+    protected string $name;
 
     /**
      * Get the value of quantity

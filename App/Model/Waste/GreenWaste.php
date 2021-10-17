@@ -9,6 +9,8 @@ class GreenWaste extends AbstractWaste implements CompostableInterface {
   protected int $quantity;
   protected int $burntCo2;
   protected int $compostedCo2;
+  protected string $name = "organique";
+
 
   public function __construct(int $quantity, int $burntCo2, int $compostedCo2)
   {
